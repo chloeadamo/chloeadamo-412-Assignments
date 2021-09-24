@@ -11,7 +11,7 @@ const evaluate = (str) => {
         case '-':
             return (expression) => parseInt(left) - parseInt(right);
         case '^':
-            return (expression) => Math.pow(parseInt(left), parseInt(right));
+            return (expression) => parseInt(left) ** parseInt(right);
         case '/':
             return (expression) => parseInt(left) / parseInt(right);
     }
