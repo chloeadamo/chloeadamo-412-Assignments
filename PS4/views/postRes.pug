@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    div(class='center')
+        h1 Weather App
+        div
+    p Input a city and we will give you the weather!!
+    form(method="post", action="/ps4/weather")
+        input(name="city" type="text" placeholder="Enter City Name" required='required')
+        button(type="submit") Fetch Weather
